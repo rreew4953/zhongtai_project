@@ -51,7 +51,7 @@ import { getEmpolyeeSimple } from '@/api/employees.js'
       const { depts } = await getDepartments()
       let isRepeat = false
       if (this.formData.id) {
-        isRepeat = depts.filter(item => item.pid === this.treeNode.id $$ item.id !== this.treeNode.id).some(item => item.name === value)
+        isRepeat = depts.filter(item => item.pid === this.treeNode.id && item.id !== this.treeNode.id).some(item => item.name === value)
       } else {
         isRepeat = depts.filter(item => item.pid === this.treeNode.id).some(item => item.name === value)
       }
