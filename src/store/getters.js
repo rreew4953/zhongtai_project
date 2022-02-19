@@ -5,6 +5,7 @@ const getters = {
   userId: state => state.user.userInfo.userId, // 建立用户id的映射
   // 在根级的getters上 开发子模块的属性给别人看 给别人用
   token: state => state.user.token,
-  staffPhoto: state => state.user.userInfo.staffPhoto
+  staffPhoto: state => state.user.userInfo.staffPhoto,
+  companyId: state => state.user.userInfo.companyId, // 建立对于user模块的companyId的快捷访问
 }
 export default getters

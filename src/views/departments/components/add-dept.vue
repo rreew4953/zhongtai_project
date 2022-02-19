@@ -71,7 +71,7 @@ import { getEmpolyeeSimple } from '@/api/employees.js'
         //  要求编码和所有的部门编码不重复
         //  由于历史数据可能没有code 所有需要加一个强制条件 value不为空
         
-        isRepeat ? callback(new Error(`阻止架构下已存在${value}`)) : callback()
+        isRepeat ? callback(new Error(`组织架构下已存在${value}`)) : callback()
       }
     return {
       // 定义表单数据
