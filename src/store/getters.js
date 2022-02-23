@@ -7,5 +7,6 @@ const getters = {
   token: state => state.user.token,
   staffPhoto: state => state.user.userInfo.staffPhoto,
   companyId: state => state.user.userInfo.companyId, // 建立对于user模块的companyId的快捷访问
+  routes: state => state.permission.routes // 导出当前的路由
 }
 export default getters
